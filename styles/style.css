@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+}
+
+button, input, a{
+	border: none;
+	text-decoration: none;
+}
+
+header{
+	background-color: #3F3F3F;
+	padding: 20px;
+	height: 45px;
+
+}
+
+.logo{
+	float: left;
+	background-color: #518ff6;
+	margin-left: 150px;
+	margin-top: -3px;
+}
+
+.logo img{
+	height: 40px;
+}
+
+.search-form{
+	margin-top: 2px;
+}
+
+.search-form input{
+	width: 455px;
+	height: 35px;
+    border-radius: 25px 0px 0px 25px;
+    margin-left: 50px;
+    float: left;
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+[type="text"]{
+	padding-left: 10px;
+}
+
+
+.search-form button{
+	background-color: #518ff6;
+	width: 117px;
+	height: 37px;
+	border-radius: 0px 20px 20px 0px;
+	float: left;
+}
+
+
+.search-form button img{
+	width: 17px;
+}
+
+.user-access{
+	margin-right: 150px;
+}
+
+.user-access a{
+	color: #a7aab0;
+	font-size: 20px;
+	float: right;
+	padding-left: 20px;
+}
+
+.user-access a:hover{
+	color: #518ff6;
+}
