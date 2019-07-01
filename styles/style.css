@@ -11,9 +11,12 @@ button, input, a{
 }
 
 header{
-	background-color: #3F3F3F;
+	background-image: url(../imgs/bron.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	padding: 20px;
-	height: 45px;
+	height: 100px;
 
 }
 
@@ -21,25 +24,25 @@ header{
 	float: left;
 	background-color: #518ff6;
 	margin-left: 150px;
-	margin-top: -3px;
+	margin-top: 10px;
+	padding: 8px;
 }
 
 .logo img{
-	height: 40px;
+	height: 60px;
 }
 
 .search-form{
-	margin-top: 2px;
+	margin-top: 45px;
 }
 
 .search-form input{
-	width: 455px;
+	width: 520px;
 	height: 35px;
     border-radius: 25px 0px 0px 25px;
-    margin-left: 50px;
+    margin-left: 250px;
     float: left;
     font-size: 16px;
-
     line-height: 1.5;
 }
 
@@ -66,12 +69,22 @@ header{
 }
 
 .user-access a{
-	color: #a7aab0;
+	background-color: #518ff6;
+	color: #fff;
 	font-size: 20px;
+	font-weight: bold;
 	float: right;
-	padding-left: 20px;
+	margin: 5px;
+	margin-top: -5px;
+	padding: 15px;
 }
 
 .user-access a:hover{
 	color: #518ff6;
+	background-color:transparent;
+}
+
+.logo:hover{
+
+	background-color:transparent;
 }
