@@ -5,9 +5,12 @@ body{
 	font-family: "Open Sans", sans-serif;
 }
 
-button, input, a{
+button, input, a, ul, li{
 	border: none;
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
+	list-style-type: none;
 }
 
 header{
@@ -17,11 +20,12 @@ header{
 	background-size: cover;
 	padding: 20px;
 	height: 100px;
-
 }
 
 .logo{
+	display: inline-block;
 	float: left;
+	vertical-align: center;
 	background-color: #518ff6;
 	margin-left: 150px;
 	margin-top: 10px;
@@ -33,11 +37,13 @@ header{
 }
 
 .search-form{
+	width: 70%;
 	margin-top: 45px;
+	display: inline-block;
 }
 
 .search-form input{
-	width: 520px;
+	width: 50%;
 	height: 35px;
     border-radius: 25px 0px 0px 25px;
     margin-left: 150px;
@@ -50,8 +56,20 @@ header{
 	padding-left: 10px;
 }
 
+.search-form input:focus{
+	outline: none;
+	box-shadow: 1px 0 5px 2px #fff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #518ff6;
+  opacity: 0.7; /* Firefox */
+}
+
 
 .search-form button{
+	display:inline-block;
+	vertical-align: center;
 	background-color: #518ff6;
 	width: 117px;
 	height: 37px;
@@ -59,24 +77,29 @@ header{
 	float: left;
 }
 
+.search-form > *{
+	vertical-align: center;
+}
 
 .search-form button img{
 	width: 17px;
 }
 
 .user-access{
-	margin-right: 150px;
+	display: inline-block;
+	float: right;
+	margin-top: -25px;
 }
 
-.user-access a{
+.user-access a{	
 	background-color: #518ff6;
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
-	float: right;
 	margin: 5px;
-	margin-top: -5px;
+	//border: 2px solid yellow;
 	padding: 15px;
+	vertical-align: center;
 }
 
 .user-access a:hover{
@@ -87,4 +110,50 @@ header{
 .logo:hover{
 
 	background-color:transparent;
+}
+
+.menu > ul{
+	background-color: #518ff6;
+	height: 60px;
+	text-align: center;
+	
+}
+
+.menu > ul> li{
+	display: inline-block;	
+	margin-top: 20px;
+}
+
+.menu > ul> li> a{
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.menu > ul > li > a:hover{
+	background-color: #000;
+}
+
+.subMenu{
+	display: none;
+	position: relative;
+	margin-top: 17px;
+	width: 160px;
+	height: 120px;
+}
+
+.menu > ul > li >a:hover + .subMenu{
+	display: block;
+}
+
+.subMenu-list{
+	background-color: #000;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	margin:0;
+}
+
+.subMenu-list ul li{
+	position: absolute;
 }
