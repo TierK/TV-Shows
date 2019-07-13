@@ -31,7 +31,7 @@ header{
 	background-position: right;
 	background-size: cover;
 	padding: 20px;
-	height: 200px;
+	height: 170px;
 }
 
 .logo{
@@ -166,7 +166,7 @@ header{
 
 .menu > ul > li > a{
 	display: block;
-	padding: 20px 15px;
+	padding: 15px 15px;
 	color: #ffffff;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -221,14 +221,14 @@ header{
 	margin: auto;
 	padding: auto;
 	width: 60%;
-	height: 80em;	
+	height: 100em;	
 }
 
 .emotions div{
 	width: 33%;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 350px auto;
+	background-size: 300px auto;
 }
 
 .emotions>div:nth-child(1){
