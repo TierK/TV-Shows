@@ -1,9 +1,20 @@
+*{
+  	box-sizing: border-box;
+  	border: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	font-family: "Open Sans", sans-serif;
 }
+
 
 button, input, a, ul, li{
 	border: none;
@@ -14,30 +25,32 @@ button, input, a, ul, li{
 }
 
 header{
-	background-image: url(../imgs/bron.jpg);
+	position: relative;
+	background-image: url(../imgs/header.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: right;
 	background-size: cover;
 	padding: 20px;
-	height: 100px;
+	height: 200px;
 }
 
 .logo{
 	display: inline-block;
 	float: left;
 	vertical-align: center;
-	background-color: #518ff6;
+	background-image: url(../imgs/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	margin-left: 150px;
 	margin-top: 10px;
 	padding: 8px;
-}
-
-.logo img{
 	height: 60px;
+	width: 150px;
 }
 
 .search-form{
-	width: 70%;
+	width: 60%;
 	margin-top: 45px;
 	display: inline-block;
 }
@@ -48,33 +61,43 @@ header{
     border-radius: 25px 0px 0px 25px;
     margin-left: 150px;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
 [type="text"]{
 	padding-left: 10px;
+	color:#960009;
 }
 
 .search-form input:focus{
 	outline: none;
-	box-shadow: 1px 0 5px 2px #fff;
+	box-shadow: 1px 0 2px 2px #fff;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #518ff6;
-  opacity: 0.7; /* Firefox */
+.search-form input:focus + button{
+	outline: none;
+	box-shadow: 1px 0 2px 2px #960009;
+}
+
+::placeholder {
+  color: #960009;
+  opacity: 0.5;
 }
 
 
 .search-form button{
 	display:inline-block;
 	vertical-align: center;
-	background-color: #518ff6;
-	width: 117px;
-	height: 37px;
+	background-color: #960009;
+	width: 90px;
+	height: 35px;
 	border-radius: 0px 20px 20px 0px;
 	float: left;
+}
+
+.search-form button:hover{
+	background-image: linear-gradient(to bottom , #960009, #4d0004);
 }
 
 .search-form > *{
@@ -82,78 +105,111 @@ header{
 }
 
 .search-form button img{
-	width: 17px;
+	width: 15px;
 }
 
 .user-access{
+	position: relative;
 	display: inline-block;
+	//border: 2px solid red;
+	width: 200px;
+	height: 60px;
 	float: right;
-	margin-top: -25px;
+    right: 150px;
+    bottom: -17px;
 }
 
 .user-access a{	
-	background-color: #518ff6;
+	position: absolute;
+	background-color: #000000;
 	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 16px;
 	margin: 5px;
-	//border: 2px solid yellow;
 	padding: 15px;
-	vertical-align: center;
+	border-radius: 45%;	
+}
+
+
+.user-access a:nth-child(2){
+	left: 50%;
 }
 
 .user-access a:hover{
-	color: #fff;
-	background-color:transparent;
+	color: #960009;
 }
+
 
 .logo:hover{
 
-	background-color:transparent;
+	background-image: url(../imgs/logo-hover.png);
+}
+
+.menu{
+	background-image: linear-gradient(to bottom , #960009, #4d0004);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 .menu > ul{
-	background-color: #518ff6;
-	height: 60px;
-	text-align: center;
-	
+	list-style: none;
+	margin: 0;
+	padding:0;
 }
 
-.menu > ul> li{
-	display: inline-block;	
-	margin-top: 20px;
+.menu >  ul >  li{
+	display: inline-block;
+	position: relative;
 }
 
-.menu > ul> li> a{
-	padding: 10px;
-	color: #fff;
-	font-size: 20px;
+
+.menu > ul > li > a{
+	display: block;
+	padding: 15px 15px;
+	color: #ffffff;
+	font-size: 15px;
+	text-transform: uppercase;
 }
 
-.menu > ul > li > a:hover{
-	background-color: #000;
+
+.fas, .far, .fab{
+	color: #ffffff;
 }
 
 .subMenu{
+	background-color: #960009;
+	text-transform: none;
 	display: none;
-	position: relative;
-	margin-top: 17px;
-	width: 160px;
-	height: 120px;
 }
 
-.menu > ul > li >a:hover + .subMenu{
+.subMenu > li{
+	padding: 8px 5px;
+}
+
+.subMenu > li > a{
+	font-size: 16px;
+	color: #ffffff;
+
+}
+
+.menu > ul > li:hover .subMenu{
 	display: block;
-}
-
-.subMenu-list{
-	background-color: #000;
-	color: #fff;
-	font-size: 14px;
-	padding: 10px;
-	margin:0;
-}
-
-.subMenu-list ul li{
 	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 220px;
+}
+
+
+.menu ul > li:hover{
+	background-color: #000000;
+}
+
+.menu ul > li > a:hover{
+	color: #960009;
+}
+
+.subMenu > li:hover{
+	background-color: #960009;
 }
