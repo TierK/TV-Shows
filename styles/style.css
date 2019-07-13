@@ -166,7 +166,7 @@ header{
 
 .menu > ul > li > a{
 	display: block;
-	padding: 15px 15px;
+	padding: 20px 15px;
 	color: #ffffff;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -212,4 +212,48 @@ header{
 
 .subMenu > li:hover{
 	background-color: #960009;
+}
+
+.emotions{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: evenly;
+	margin: auto;
+	padding: auto;
+	width: 60%;
+	height: 80em;	
+}
+
+.emotions div{
+	width: 33%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 350px auto;
+}
+
+.emotions>div:nth-child(1){
+	background-image: url(../imgs/emotions/anger.png);
+}
+
+.emotions>div:nth-child(2){
+	background-image: url(../imgs/emotions/happiness.png);
+}
+
+.emotions>div:nth-child(3){
+	background-image: url(../imgs/emotions/fear.png);
+}
+
+.emotions>div:nth-child(4){
+	background-image: url(../imgs/emotions/sadness.png);
+}
+
+.emotions>div:nth-child(5){
+	background-image: url(../imgs/emotions/surprise.png);
+}
+
+.emotions>div:nth-child(6){
+	background-image: url(../imgs/emotions/contempt.png);
+}
+.emotions>div:nth-child(7){
+	background-image: url(../imgs/emotions/disgust.png);
 }
