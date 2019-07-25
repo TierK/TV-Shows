@@ -11,7 +11,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	width: 100%;
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -25,13 +24,10 @@ button, input, a, ul, li{
 }
 
 header{
-	position: relative;
 	background-image: url(../imgs/header.jpg);
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
-	padding: 20px;
-	height: 170px;
 }
 
 .logo{
@@ -146,10 +142,6 @@ header{
 
 .menu{
 	background-image: linear-gradient(to bottom , #960009, #4d0004);
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
 }
 
 .menu > ul{
@@ -214,48 +206,32 @@ header{
 	background-color: #960009;
 }
 
-.emotions{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: auto;
-	padding: auto;
-	width: 60%;
-	height: 100em;
-	margin-top: 2em;	
+body {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas:
+    					"head head head head head head"
+                       "nav nav nav nav nav nav"
+                       "main main main main main main"
+                       "main main main main main main"
+    					"main main main main main main"
+                       "foot foot foot foot foot foot";
+  grid-template-rows: 12% 4% 30% 30% 30% 3%;
 }
 
-.emotions div{
-	width: 33%;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+header {
+  grid-area: head;
+}
+.menu {
+  grid-area: nav;
 }
 
-/*
-.emotions>div:nth-child(1){
-	background-image: url(../imgs/emotions/anger.png);
+.emotions-list {
+  grid-area: main;
 }
 
-.emotions>div:nth-child(2){
-	background-image: url(../imgs/emotions/happiness.png);
+footer {
+  grid-area: foot;
+  background-color: #960009;
 }
-
-.emotions>div:nth-child(3){
-	background-image: url(../imgs/emotions/fear.png);
-}
-
-.emotions>div:nth-child(4){
-	background-image: url(../imgs/emotions/sadness.png);
-}
-
-.emotions>div:nth-child(5){
-	background-image: url(../imgs/emotions/surprise.png);
-}
-
-.emotions>div:nth-child(6){
-	background-image: url(../imgs/emotions/contempt.png);
-}
-.emotions>div:nth-child(7){
-	background-image: url(../imgs/emotions/disgust.png);
-}
-*/
