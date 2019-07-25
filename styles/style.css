@@ -231,6 +231,7 @@ header{
 	background-size: 100% auto;
 }
 
+/*
 .emotions>div:nth-child(1){
 	background-image: url(../imgs/emotions/anger.png);
 }
@@ -257,3 +258,4 @@ header{
 .emotions>div:nth-child(7){
 	background-image: url(../imgs/emotions/disgust.png);
 }
+*/

@@ -1,0 +1,65 @@
+.star{}
+
+.heart{}
+
+h1{
+	width: 100%;
+}
+
+.emotions-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.emotions-list .emotions-item{
+	width: 33.33333%;
+	height: 350px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 900px){
+	.emotions-list .emotions-item{
+		width: 50%;
+	}
+}
+
+.emotions-list .emotions-item > *{
+	width: 350px;
+	background-color: #960009;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.emotions-list .emotions-item a{
+	color: #fff;
+}
+
+
+.emotions-list .emotions-item img{
+	width: 100%;
+}
+
+
+.emotions-list .emotions-item .emotions-title{
+	height: 40px;
+	border-bottom: 1px solid #ff828a;
+	padding: 10px;
+}
+
+.emotions-list .emotions-item .emotions-title a{}
+
+.emotions-list .emotions-item .emotions-engage{
+	height: 40px;
+	padding: 10px;
+	display: flex;
+}
+
+.emotions-list .emotions-item .emotions-engage > *{
+	flex: 1;
+}
